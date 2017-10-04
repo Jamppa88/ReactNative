@@ -1,4 +1,4 @@
-package com.facebook.react.modules.toast;
+package com.androidtest;
 import android.widget.Toast;
 
 import com.facebook.react.bridge.NativeModule;

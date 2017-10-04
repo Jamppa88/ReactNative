@@ -10,14 +10,14 @@ import {
   StyleSheet,
   Text,
   View,
-  TextInput,
   Button
 } from 'react-native';
 import {
   StackNavigator
 } from 'react-navigation';
 
-import ToastModule from './android/js/modules/Toast';
+// Importing Toast defined in following directory
+import Toast from './android/js/modules/Toast.js';
 
 
 
@@ -48,8 +48,8 @@ class AltScreen extends Component {
     return(
       <View style={styles.container}>
         <Text>Moikka taas</Text>
-        <Button title="Vaihda sivua"
-          onPress={() => ToastModule.show("Hahaa", ToastModule.SHORT)}
+        <Button title="Avaa ilmoitus"
+          onPress={() => Toast.show("Hahaa, toimin!", Toast.SHORT)}
         />
       </View>
     );
